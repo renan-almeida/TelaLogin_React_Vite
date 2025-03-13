@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {FaUser, FaLock, FaFacebook, FaGithub, FaLinkedin} from "react-icons/fa";
 import "./Registrar.css";
+import { Link } from "react-router-dom";//essa linha está vinculada a linha 55
 
     const Registrar = () => {
         const [nomeCompleto, setNomeCompleto] = useState("");
@@ -94,7 +95,7 @@ import "./Registrar.css";
 
                 <div className="login-link">
                     <p>
-                        Já tem uma conta? <a href="Login.jsx">Entrar</a>
+                    <Link to="/Login">Já tem uma conta? Entrar</Link>
                     </p>
                 </div>
             

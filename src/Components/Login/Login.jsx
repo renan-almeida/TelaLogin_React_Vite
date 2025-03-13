@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaUser, FaLock} from "react-icons/fa";
 import "./Login.css";
+import { Link } from "react-router-dom";//essa linha está vinculada a linha 55
 
 const Login = () => {
   // Estados para armazenar as entradas do usuário
@@ -52,7 +53,7 @@ const Login = () => {
 
         <div className="signup-link">
           <p>
-            Não tem uma conta? <a href="Registrar.jsx">Registrar</a>{" "}
+          <Link to="/Registrar">Não tem uma conta? Regitre-se</Link>
           </p>
         </div>
 
